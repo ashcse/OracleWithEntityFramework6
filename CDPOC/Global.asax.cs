@@ -17,7 +17,7 @@ namespace CDPOC
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            AutofacConfig.InitializeDependencies();
+            UnityConfig.RegisterComponents();
         }
     }
 }

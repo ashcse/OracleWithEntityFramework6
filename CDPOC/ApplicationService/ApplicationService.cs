@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Web;
 using CDPOC.Models;
 using Repository.DataService;
+using CDPOC.Mappers;
 
 namespace CDPOC.ApplicationService
 {
@@ -16,7 +17,6 @@ namespace CDPOC.ApplicationService
         {
             this.employeeDataService = employeeDataService;
         }
-
 
         public Task AddEmployeeAsync(Employee employee)
         {
@@ -36,25 +36,7 @@ namespace CDPOC.ApplicationService
         public async Task<List<Employee>> GetEmployeesAsync()
         {
             var query = await employeeDataService.GetEmployeesAsync();
-
-            List<Employee> result = new List<Employee>();
-            foreach(var emp in query)
-            {
-               result.Add( new Employee
-                {
-                    DEPARTMENT_ID = emp.DEPARTMENT_ID,
-                    Email = emp.EMAIL,
-                    FirstName = emp.FIRST_NAME,
-                    EmployeeId = emp.EMPLOYEE_ID,
-                    LastName = emp.LAST_NAME,
-                    MANAGER_ID = emp.MANAGER_ID,
-                    SALARY = emp.SALARY
-
-                });
-            }
-
-            return result;
-
+            return (new EmployeeConverter()).Convert(query).ToList();
         }
 
         public Task UpdateAsync(Employee employee)

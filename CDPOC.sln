@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDPOC", "CDPOC\CDPOC.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{7F751EA1-6A12-47DD-AE93-6A510325E6DF}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "POCSetup", "POCSetup\POCSetup.vdproj", "{7DDF005C-0AA1-4E3B-9EE4-188407F73E88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCDPOC", "TestCDPOC\TestCDPOC.csproj", "{13CD8F47-DAE8-47F9-B447-7EB42AE89C0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,12 @@ Global
 		{7F751EA1-6A12-47DD-AE93-6A510325E6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F751EA1-6A12-47DD-AE93-6A510325E6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F751EA1-6A12-47DD-AE93-6A510325E6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DDF005C-0AA1-4E3B-9EE4-188407F73E88}.Debug|Any CPU.ActiveCfg = Debug
+		{7DDF005C-0AA1-4E3B-9EE4-188407F73E88}.Release|Any CPU.ActiveCfg = Release
+		{13CD8F47-DAE8-47F9-B447-7EB42AE89C0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13CD8F47-DAE8-47F9-B447-7EB42AE89C0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13CD8F47-DAE8-47F9-B447-7EB42AE89C0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13CD8F47-DAE8-47F9-B447-7EB42AE89C0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
